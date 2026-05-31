@@ -18,7 +18,7 @@ help: ## Show this help message
 # Main Commands
 # ============================================================================
 
-start: ## Start all services
+up: start ## Alias for start ## Start all services
 	@echo "🚀 Starting Arsenal FC Analytics Platform..."
 	docker compose up -d
 	@echo "✅ Services started!"
@@ -38,7 +38,7 @@ up-build: ## Build and start all services
 	docker compose up --build -d
 	@echo "✅ Services built and started!"
 
-stop: ## Stop all services
+down: stop ## Alias for stop ## Stop all services
 	@echo "🛑 Stopping services..."
 	docker compose down
 	@echo "✅ Services stopped"
